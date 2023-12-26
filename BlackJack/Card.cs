@@ -8,6 +8,10 @@
             _suit = suit;
             _meaning = meaning;
         }
+        public string? GetSuit()
+        {
+            return _suit;
+        }
     }
     
     public class Player
@@ -15,9 +19,23 @@
         public List<Card> _playerHand = new List<Card>();
         Deck deck = new Deck();
         
-        public void GetCard(List<Card> deck)
+        public void GetCard(List<Card> Deck)
         {
-            _playerHand.Add(deck[0]);
+            _playerHand.Add(deck.GetRandomCard());
+        }
+
+        public int GetPlayerScore(List<Card> _playerHand)
+        {
+            int score = 0;
+
+            for(int i = 0; i < _playerHand.Count; i++)
+            {
+                if(int.TryParse(_playerHand[i].GetSuit(), out int number)) {
+                    score += number;
+                }
+            }
+
+            return score;
         }
     }
     public class Deck
@@ -41,9 +59,11 @@
             Random random = new Random();
             Card card;
             int randomNumber;
+
             randomNumber = random.Next(_deck.Count);
             card = _deck[randomNumber];
             _deck.Remove(card);
+
             return card;
         }
     }

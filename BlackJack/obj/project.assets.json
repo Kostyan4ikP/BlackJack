@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\STromb\\Desktop\\BlackJack\\BlackJack\\BlackJack.csproj",
+      "projectUniqueName": "C:\\Users\\STromb\\Documents\\GitHub\\BlackJack\\BlackJack\\BlackJack.csproj",
       "projectName": "BlackJack",
-      "projectPath": "C:\\Users\\STromb\\Desktop\\BlackJack\\BlackJack\\BlackJack.csproj",
+      "projectPath": "C:\\Users\\STromb\\Documents\\GitHub\\BlackJack\\BlackJack\\BlackJack.csproj",
       "packagesPath": "C:\\Users\\STromb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\STromb\\Desktop\\BlackJack\\BlackJack\\obj\\",
+      "outputPath": "C:\\Users\\STromb\\Documents\\GitHub\\BlackJack\\BlackJack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\STromb\\AppData\\Roaming\\NuGet\\NuGet.Config",
